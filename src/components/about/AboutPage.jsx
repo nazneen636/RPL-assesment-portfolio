@@ -51,6 +51,7 @@ const AboutPage = () => {
           <div className="flex items-center  gap-4">
             {socialMedia?.map((item) => (
               <a
+                key={item.id}
                 href={item.path}
                 className="h-10 w-10 bg-black text-white rounded-full flex items-center justify-center text-xl"
               >
