@@ -3,49 +3,51 @@ import { Link } from "react-router";
 
 const menuItems = [
   {
-    id: "home",
+    id: 1,
     label: "Home",
+    path: "/",
   },
   {
-    id: "about",
+    id: 2,
     label: "About",
+    path: "/about",
   },
   {
-    id: "services",
+    id: 3,
     label: "Services",
+    path: "/services",
   },
   {
-    id: "works",
-    label: "Works",
+    id: 4,
+    label: "Portfolio",
+    path: "/portfolio",
   },
   {
-    id: "blog",
-    label: "Blog",
-  },
-  {
-    id: "contact",
+    id: 5,
     label: "Contact",
+    path: "/contact",
   },
 ];
 const Nav = () => {
-  const [scrolled, setScrolled] = useState(false);
+  // const [scrolled, setScrolled] = useState(false);
 
-  useEffect(() => {
-    const handleScroll = () => {
-      if (window.scrollY > 50) {
-        setScrolled(true);
-      } else {
-        setScrolled(false);
-      }
-    };
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
+  // useEffect(() => {
+  //   const handleScroll = () => {
+  //     if (window.scrollY > 50) {
+  //       setScrolled(true);
+  //     } else {
+  //       setScrolled(false);
+  //     }
+  //   };
+  //   window.addEventListener("scroll", handleScroll);
+  //   return () => window.removeEventListener("scroll", handleScroll);
+  // }, []);
+
+  // ${scrolled ? "bg-white text-black" : "bg-transparent text-white"}
   return (
     <div
-      className={`fixed top-0 left-0 w-full z-50 ${
-        scrolled ? "bg-white text-black" : "bg-transparent text-white"
-      }`}
+      className={`fixed top-0 left-0 w-full z-50 bg-white text-black border-b border-b-gray-200 shadow-md
+        `}
     >
       <div className="flex items-center justify-between container py-5">
         {/* logo */}
@@ -57,7 +59,7 @@ const Nav = () => {
         <div className="flex items-center gap-5 ">
           {menuItems?.map((item, index) => (
             <a
-              href={item.id}
+              href={item.path}
               key={index}
               className="text-base hover:text-yellow-400 transition-all duration-300 "
             >
