@@ -2,6 +2,7 @@ import React from "react";
 import about from "/about-img.jpg";
 import { FaFacebookF, FaInstagram, FaLinkedinIn } from "react-icons/fa";
 import { Link } from "react-router";
+import PageTitle from "../common/PageTitle";
 
 const socialMedia = [
   {
@@ -23,11 +24,7 @@ const socialMedia = [
 const AboutPage = () => {
   return (
     <div className=" pt-20">
-      <div className="py-10 border-b border-b-gray-200">
-        <h1 className="text-3xl font-semibold opacity-90 container">
-          About Page
-        </h1>
-      </div>
+      <PageTitle text="About" />
       <div className="grid grid-cols-3 gap-8 container pt-8">
         <div className="">
           <img src={about} alt="about" />
