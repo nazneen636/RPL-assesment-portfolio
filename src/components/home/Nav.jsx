@@ -58,13 +58,13 @@ const Nav = () => {
         {/* manu */}
         <div className="flex items-center gap-5 ">
           {menuItems?.map((item, index) => (
-            <a
-              href={item.path}
+            <Link
+              to={item.path}
               key={index}
               className="text-base hover:text-yellow-400 transition-all duration-300 "
             >
               {item.label}
-            </a>
+            </Link>
           ))}
         </div>
       </div>
