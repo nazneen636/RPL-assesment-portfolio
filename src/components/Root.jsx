@@ -7,8 +7,12 @@ const Root = () => {
   return (
     <div className="relative">
       <Nav />
-      <Outlet />
-      <Footer />
+      <div className="">
+        <Outlet />
+      </div>
+      <div className="pt-28">
+        <Footer />
+      </div>
     </div>
   );
 };

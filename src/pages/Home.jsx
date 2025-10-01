@@ -8,7 +8,6 @@ import Service from "../components/home/Service";
 const Home = () => {
   return (
     <div className="">
-      <Nav />
       <Hero />
       <Mission />
       <Service />
