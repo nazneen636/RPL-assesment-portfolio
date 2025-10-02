@@ -21,7 +21,7 @@ export default function ContactForm() {
                 type="text"
                 name="name"
                 id="name"
-                className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 "
+                className=" border-b border-b-gray-300 text-gray-900 text-xl  outline-none  w-full p-2.5 "
                 placeholder="Enter your name"
                 required
               />
@@ -37,7 +37,7 @@ export default function ContactForm() {
                 type="email"
                 name="email"
                 id="email"
-                className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
+                className="border-b border-b-gray-300 text-gray-900 text-xl  outline-none  w-full p-2.5 "
                 placeholder="Enter your email"
                 required
               />
